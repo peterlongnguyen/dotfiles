@@ -1,0 +1,11 @@
+set autoindent
+set nosmartindent
+set number
+set tabstop=2
+set shiftwidth=2
+set expandtab
+syntax on
+colorscheme default
+set laststatus=2
+set nowrap
+set hlsearch
