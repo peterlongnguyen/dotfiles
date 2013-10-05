@@ -42,6 +42,6 @@ Debian driver:
 https://wiki.debian.org/ATIProprietary#AMD_Catalyst_12.6
 
 Compiz:
-sudo apt-get install compiz-fusion-bcop 
+`sudo apt-get install compiz-fusion-bcop`
 
 
