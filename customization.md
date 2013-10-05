@@ -38,6 +38,8 @@ Install ruby-build
 Run this command
 `rbenv rehash`
 
+Debian driver:
+https://wiki.debian.org/ATIProprietary#AMD_Catalyst_12.6
 
 
 
