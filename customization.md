@@ -6,6 +6,9 @@
 
 3. vim, irssi, git, tmux
 
+Set up SSH keys for github:
+https://help.github.com/articles/generating-ssh-keys
+
 4. nvm, node
 https://www.digitalocean.com/community/articles/how-to-install-node-js-with-nvm-node-version-manager-on-a-vps#installation
 https://github.com/creationix/nvm
