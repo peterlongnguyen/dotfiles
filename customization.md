@@ -41,6 +41,18 @@ Run this command
 Debian driver:
 https://wiki.debian.org/ATIProprietary#AMD_Catalyst_12.6
 
+Taskbar:
+https://extensions.gnome.org/extension/584/taskbar/
+
+System monitor:
+https://extensions.gnome.org/extension/9/systemmonitor/
+
+No topleft hotcorner:
+https://extensions.gnome.org/extension/118/no-topleft-hot-corner/
+
+Panel settings (autohide):
+https://extensions.gnome.org/extension/208/panel-settings/
+
 Compiz:
 `sudo apt-get install compiz-fusion-bcop`
 
