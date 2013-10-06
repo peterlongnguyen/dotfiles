@@ -66,5 +66,13 @@ i3:
 Set second monitor position and change resolution:
 `xrandr --output DFP5 --right-of CRT1 && xrandr --output DFP5 --mode 1440x900`
 
+Map volume buttons (for systems that use amixer
+```
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+ unmute
+bindsym XF86AudioLowerVolume  exec amixer -q sset Master 5%- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+```
+`i3 reload`
+
 
 
