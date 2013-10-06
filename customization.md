@@ -56,6 +56,9 @@ https://extensions.gnome.org/extension/118/no-topleft-hot-corner/
 Panel settings (autohide):
 https://extensions.gnome.org/extension/208/panel-settings/
 
+Show date next to time in taskbar:
+`gsettings set org.gnome.shell.clock show-date true`
+
 Compiz:
 `sudo apt-get install compiz-fusion-bcop`
 
