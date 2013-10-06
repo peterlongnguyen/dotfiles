@@ -64,8 +64,7 @@ Compiz:
 
 i3:
 Set second monitor position and change resolution:
-xrandr --output DFP5 --right-of CRT1
-xrandr --output DFP5 --mode 1440x900
+`xrandr --output DFP5 --right-of CRT1 && xrandr --output DFP5 --mode 1440x900`
 
 
 
