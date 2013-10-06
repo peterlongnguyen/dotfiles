@@ -62,4 +62,10 @@ Show date next to time in taskbar:
 Compiz:
 `sudo apt-get install compiz-fusion-bcop`
 
+i3:
+Set second monitor position and change resolution:
+xrandr --output DFP5 --right-of CRT1
+xrandr --output DFP5 --mode 1440x900
+
+
 
