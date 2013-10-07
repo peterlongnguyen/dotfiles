@@ -63,6 +63,9 @@ Compiz:
 `sudo apt-get install compiz-fusion-bcop`
 
 i3:
+Installation:
+`apt-get install i3 i3status suckless-tools`
+
 Set second monitor position and change resolution:
 `xrandr --output DFP5 --right-of CRT1 && xrandr --output DFP5 --mode 1440x900`
 
