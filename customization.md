@@ -4,7 +4,7 @@
 2. Decrease title bar vertical padding:
 `sudo sed -i "/title_vertical_pad/s/value=\"[0-9]\{1,2\}\"/value=\"0\"/g" /usr/share/themes/Adwaita/metacity-1/metacity-theme-3.xml`  
 
-3. vim, irssi, git, tmux
+3. vim, pathogen, irssi, git, tmux
 
 Set up SSH keys for github:
 https://help.github.com/articles/generating-ssh-keys
