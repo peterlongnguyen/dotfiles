@@ -1,3 +1,7 @@
+Chrome extension:
+Dimscreen
+Hacker Vision
+
 1. Customize prompt: ~/.bashrc
 `export PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\u: \w \\$ \[$(tput sgr0)\]"`
 
@@ -76,6 +80,8 @@ bindsym XF86AudioLowerVolume  exec amixer -q sset Master 5%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 ```
 `i3 reload`
+
+
 
 
 
