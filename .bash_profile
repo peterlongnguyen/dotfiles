@@ -16,3 +16,17 @@ source ~/.nvm/nvm.sh
 
 #eva l"$(rbenv init -)"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+##### new debian config
+
+source ~/.bash_aliases
+
+set -o vi
+export PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\u: \w \\$ \[$(tput sgr0)\]"
+
+source ~/.nvm/nvm.sh
+nvm use v0.10.20
+
+eval "$(rbenv init -)"
+
+###
