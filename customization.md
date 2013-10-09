@@ -45,6 +45,9 @@ Install ruby-build
 Run this command
 `rbenv rehash`
 
+Linux USB installer:
+http://unetbootin.sourceforge.net/
+
 Debian driver:
 https://wiki.debian.org/ATIProprietary#AMD_Catalyst_12.6
 
