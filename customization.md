@@ -10,6 +10,12 @@ Hacker Vision
 
 3. vim, pathogen, irssi, git, tmux
 
+Source .gitignore:
+git config --global core.excludesfile ~/.gitignore
+
+Git unadd:
+git config --global alias.unadd "reset HEAD"
+
 Set up SSH keys for github:
 https://help.github.com/articles/generating-ssh-keys
 
