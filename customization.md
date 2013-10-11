@@ -10,6 +10,9 @@ Hacker Vision
 
 3. vim, pathogen, irssi, git, tmux
 
+Use vi bindings in the bash prompt:
+set -o vi
+
 Source .gitignore:
 git config --global core.excludesfile ~/.gitignore
 
