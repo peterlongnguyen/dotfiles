@@ -3,7 +3,8 @@
 	email = peterlongnguyen@gmail.com
 [core]
 	excludesfile = ~/.gitignore
-
+[alias]
+  unadd = reset HEAD
 [color]
   branch = auto
   diff = auto
