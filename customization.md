@@ -35,6 +35,14 @@ Add this line to your ~/.bash_profile or ~/.bashrc
 install node version of choice 
 `nvm install v0.10.20`
 
+Allow sudo to recognize npm:
+```
+sudo ln -s /usr/local/bin/node /usr/bin/node
+sudo ln -s /usr/local/lib/node /usr/lib/node
+sudo ln -s /usr/local/bin/npm /usr/bin/npm
+sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
+```
+
 5. rbenv, ruby-build, ruby
 http://www.rubyinside.com/rbenv-a-simple-new-ruby-version-management-tool-5302.html
 https://github.com/sstephenson/ruby-build
