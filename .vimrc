@@ -6,10 +6,11 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 syntax on
+filetype plugin indent on
 set laststatus=2
 set nowrap
 set hlsearch
-colorscheme github
+colorscheme default
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
