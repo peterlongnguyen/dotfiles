@@ -19,5 +19,6 @@ alias aliases="vim ~/.bash_aliases"
 alias gitignore="vim ~/.gitignore"
 alias branches="git branch -a"
 alias status="git status"
+alias diff="git diff"
 
 alias ls="ls -a" 
