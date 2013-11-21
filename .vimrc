@@ -11,6 +11,7 @@ set laststatus=2
 set nowrap
 set hlsearch
 colorscheme default
+noremap % v%
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
