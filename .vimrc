@@ -7,6 +7,7 @@ set shiftwidth=2
 set expandtab
 syntax on
 filetype plugin indent on
+autocmd BufNewFile,BufRead,BufReadPost *.cson set syntax=coffee
 set laststatus=2
 set nowrap
 set hlsearch
