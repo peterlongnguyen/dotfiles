@@ -1,3 +1,7 @@
+# internet
+netctl enable wlp3s0-Cisco38860
+netctl start wlp3s0-Cisco38860
+
 # update system, sync repos
 pacman -Syu
 
@@ -6,10 +10,26 @@ dmesg -D
 
 # install graphics driver (intel-specific) 
 pacman -S xf86-video-intel
+pacman -S xorg-xinit
+pacman -S xorg-server
 
+# setup user with sudo rights
+useradd peter
+passwd peter
+pacman -S sudo
+visudo
+# uncomment %sudo ALL=(ALL) ALL
+groupadd sudo peter
+usermod -a -G sudo peter
+
+pacman -S gnome-termninal
 
 # github setup https://help.github.com/articles/generating-ssh-keys
 pacman -S github
 pacman -S openssh
 ssh-keygen -t rsa -C "youremail@email.com"
 
+# i3
+pacman -S i3-wm
+
+pacman -S chromium
