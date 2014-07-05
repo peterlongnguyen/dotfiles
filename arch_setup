@@ -1,0 +1,10 @@
+# update system, sync repos
+pacman -Syu
+
+# clears screen of error messages
+dmesg -D
+
+# install graphics driver (intel-specific) 
+pacman -S xf86-video-intel
+
+# 
