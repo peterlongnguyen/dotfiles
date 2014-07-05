@@ -33,3 +33,5 @@ ssh-keygen -t rsa -C "youremail@email.com"
 pacman -S i3-wm
 
 pacman -S chromium
+
+# install yaourt https://www.digitalocean.com/community/tutorials/how-to-use-yaourt-to-easily-download-arch-linux-community-packages
