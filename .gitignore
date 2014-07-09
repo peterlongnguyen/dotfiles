@@ -25,6 +25,10 @@
 *.rar
 *.tar
 *.zip
+node_modules/
+node_modules
+.splat
+temp-python
 
 # Logs and databases #
 ######################
