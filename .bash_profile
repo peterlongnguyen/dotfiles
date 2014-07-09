@@ -1,32 +1,31 @@
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-PATH=/usr/local/share/npm/bin:$PATH
-set -o vi
-
-# added by Anaconda 1.6.0 installer
-export PATH="/Users/peternguyen/anaconda/bin:$PATH"
-export PATH="/usr/local/Cellar/smlnj/110.75/libexec/bin:$PATH"
-
-# personal settings
-export PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\u: \w \\$ \[$(tput sgr0)\]"
-
-source ~/.nvm/nvm.sh
-
-#eva l"$(rbenv init -)"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-##### new debian config
+#
+# ~/.bash_profile
+#
 
 source ~/.bash_aliases
 
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
+peter: ~ $ kat ~/.bashrc 
+#
+# ~/.bashrc
+#
+
+export EDITOR="vim"
 set -o vi
 export PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\u: \w \\$ \[$(tput sgr0)\]"
+PATH="${PATH}:/usr/share/elasticsearch/bin/elasticsearch"
+PATH="${PATH}:~/.gem/ruby/2.0.0/bin"
 
-source ~/.nvm/nvm.sh
-nvm use v0.10.20
+export PATH="$PATH":`pwd`/documents/depot_tools
 
-eval "$(rbenv init -)"
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
-###
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
+nvm use v0.10.22
+
+PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
+
+source ~/.bash_aliases
