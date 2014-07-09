@@ -12,5 +12,9 @@ all:
   pulseaudio --start
 keys:
   xmodmap ~/.xmodmap
-elasticsearch:  
-  sudo /usr/share/elasticsearch/bin/elasticsearch
+elasticsearch:	
+	sudo /usr/share/elasticsearch/bin/elasticsearch
+mongo:
+	sudo systemctl start mongodb
+redis:
+	sudo redis-server &
