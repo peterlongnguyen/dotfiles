@@ -22,16 +22,24 @@ visudo
 groupadd sudo peter
 usermod -a -G sudo peter
 
-pacman -S gnome-termninal
+pacman -S make --noconfirm --quiet
+pacman -S curl --noconfirm --quiet
+
+pacman -S gnome-termninal --noconfirm --quiet
 
 # github setup https://help.github.com/articles/generating-ssh-keys
-pacman -S github
-pacman -S openssh
+pacman -S github --noconfirm --quiet
+pacman -S openssh --noconfirm --quiet
 ssh-keygen -t rsa -C "youremail@email.com"
 
 # i3
-pacman -S i3-wm
+pacman -S i3-wm --noconfirm --quiet
 
-pacman -S chromium
+pacman -S chromium --noconfirm --quiet
 
 # install yaourt https://www.digitalocean.com/community/tutorials/how-to-use-yaourt-to-easily-download-arch-linux-community-packages
+
+pacman -S vim --noconfirm --quiet
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
