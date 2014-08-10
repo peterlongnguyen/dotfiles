@@ -22,6 +22,8 @@ visudo
 groupadd sudo peter
 usermod -a -G sudo peter
 
+sudo timedatectl set-timezone America/Los_Angeles
+
 pacman -S make --noconfirm --quiet
 pacman -S curl --noconfirm --quiet
 
@@ -35,11 +37,37 @@ ssh-keygen -t rsa -C "youremail@email.com"
 # i3
 pacman -S i3-wm --noconfirm --quiet
 
-pacman -S chromium --noconfirm --quiet
-
 # install yaourt https://www.digitalocean.com/community/tutorials/how-to-use-yaourt-to-easily-download-arch-linux-community-packages
+pacman -S yaourt --noconfirm --quiet
+pacman -S package-query --noconfirm --quiet
+pacman -S base-devel --noconfirm --quiet
+
+yaourt -S google-chrome --noconfirm --quiet
 
 pacman -S vim --noconfirm --quiet
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+sudo pacman -S irssi --noconfirm --quiet
+
+# bash_profile setup
+touch ~/.bash_profile
+touch ~/.bashrc
+echo "set -o vi" >> ~/.bashrc
+source ~/.bash_aliases
+source ~/.bashrc
+
+# programming tools
+pacman -S nvm --noconfirm --quiet
+nvm install v0.10.26
+npm install coffee-script --g
+
+# redis
+pacman -S redis --noconfirm --quiet
+
+# mongo
+pacman -S mongodb --noconfirm --quiet
+
+
+
 
