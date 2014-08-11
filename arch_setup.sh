@@ -2,8 +2,12 @@
 netctl enable wlp3s0-Cisco38860
 netctl start wlp3s0-Cisco38860
 
-# update system, sync repos
+# update system, sync repos, install basic tools
 pacman -Syu
+pacman -S sudo --noconfirm --quiet
+pacman -S make --noconfirm --quiet
+pacman -S curl --noconfirm --quiet
+pacman -S gnome-termninal --noconfirm --quiet
 
 # clears screen of error messages
 sudo dmesg -D
@@ -20,18 +24,14 @@ pacman -S base-devel --noconfirm --quiet
 # setup user with sudo rights
 useradd peter
 passwd peter
-pacman -S sudo
 visudo
+
 # uncomment %sudo ALL=(ALL) ALL
 groupadd sudo peter
 usermod -a -G sudo peter
 
 # set timezone
 sudo timedatectl set-timezone America/Los_Angeles
-
-pacman -S make --noconfirm --quiet
-pacman -S curl --noconfirm --quiet
-pacman -S gnome-termninal --noconfirm --quiet
 
 # github setup https://help.github.com/articles/generating-ssh-keys
 pacman -S github --noconfirm --quiet
@@ -62,7 +62,7 @@ source ~/.bash_aliases
 source ~/.bashrc
 
 # programming tools
-sudo pacman -S irssi --noconfirm --quiet
+pacman -S irssi --noconfirm --quiet
 pacman -S nvm --noconfirm --quiet
 yaourt -S google-chrome --noconfirm --quiet
 nvm install v0.10.26
