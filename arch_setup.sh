@@ -6,7 +6,7 @@ netctl start wlp3s0-Cisco38860
 pacman -Syu
 
 # clears screen of error messages
-dmesg -D
+sudo dmesg -D
 
 # install graphics driver (intel-specific) 
 pacman -S xf86-video-intel
