@@ -13,6 +13,10 @@ pacman -S xf86-video-intel
 pacman -S xorg-xinit
 pacman -S xorg-server
 
+# base software
+pacman -S package-query --noconfirm --quiet
+pacman -S base-devel --noconfirm --quiet
+
 # setup user with sudo rights
 useradd peter
 passwd peter
@@ -22,11 +26,11 @@ visudo
 groupadd sudo peter
 usermod -a -G sudo peter
 
+# set timezone
 sudo timedatectl set-timezone America/Los_Angeles
 
 pacman -S make --noconfirm --quiet
 pacman -S curl --noconfirm --quiet
-
 pacman -S gnome-termninal --noconfirm --quiet
 
 # github setup https://help.github.com/articles/generating-ssh-keys
@@ -37,18 +41,18 @@ ssh-keygen -t rsa -C "youremail@email.com"
 # i3
 pacman -S i3-wm --noconfirm --quiet
 
-# install yaourt https://www.digitalocean.com/community/tutorials/how-to-use-yaourt-to-easily-download-arch-linux-community-packages
+# install yaourt
+arch=$(uname -m)
+sudo cp /etc/pacman.conf /etc/pacman.conf.bak
+echo "" >> /etc/pacman.conf
+echo "[archlinuxfr]" >> /etc/pacman.conf
+echo "Server = http://repo.archlinux.fr/$arch" >> /etc/pacman.conf
 pacman -S yaourt --noconfirm --quiet
-pacman -S package-query --noconfirm --quiet
-pacman -S base-devel --noconfirm --quiet
 
-yaourt -S google-chrome --noconfirm --quiet
-
+# vim
 pacman -S vim --noconfirm --quiet
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-sudo pacman -S irssi --noconfirm --quiet
 
 # bash_profile setup
 touch ~/.bash_profile
@@ -58,7 +62,9 @@ source ~/.bash_aliases
 source ~/.bashrc
 
 # programming tools
+sudo pacman -S irssi --noconfirm --quiet
 pacman -S nvm --noconfirm --quiet
+yaourt -S google-chrome --noconfirm --quiet
 nvm install v0.10.26
 npm install coffee-script --g
 
