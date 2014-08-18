@@ -37,6 +37,8 @@ sudo timedatectl set-timezone America/Los_Angeles
 pacman -S github --noconfirm --quiet
 pacman -S openssh --noconfirm --quiet
 ssh-keygen -t rsa -C "youremail@email.com"
+touch ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 
 # i3
 pacman -S i3-wm --noconfirm --quiet
