@@ -85,7 +85,17 @@ pacman -S irssi --noconfirm --quiet
 pacman -S nvm --noconfirm --quiet
 yaourt -S google-chrome --noconfirm --quiet
 nvm install v0.10.26
+nvm use 0.10
+source ~/.nvm/nvm.sh
+echo "source ~/.nvm/nvm.sh" >> ~/.bashrc
 npm install coffee-script --g
+
+yaourt -S rbenv --noconfirm --quiet
+eval "$(rbenv init -)"
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+rbenv install 1.9.3-p547
+
+pacman -S python2
 
 # redis
 pacman -S redis --noconfirm --quiet
