@@ -94,6 +94,7 @@ yaourt -S rbenv --noconfirm --quiet
 eval "$(rbenv init -)"
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 rbenv install 1.9.3-p547
+rbenv rehash
 
 pacman -S python2
 
