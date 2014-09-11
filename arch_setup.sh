@@ -91,6 +91,7 @@ echo "source ~/.nvm/nvm.sh" >> ~/.bashrc
 npm install coffee-script --g
 
 yaourt -S rbenv --noconfirm --quiet
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 eval "$(rbenv init -)"
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 rbenv install 1.9.3-p547
