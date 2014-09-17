@@ -46,7 +46,18 @@ touch ~/.gitignore_global
 curl https://raw.githubusercontent.com/peterlnguyen/dotfiles/master/.gitignore >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 touch ~/.gitconfig
-wget ~/.gitconfig https://raw.githubusercontent.com/peterlnguyen/dotfiles/master/.gitconfig
+curl https://raw.githubusercontent.com/peterlnguyen/dotfiles/master/.gitconfig >> ~/.gitconfig
+
+# zsh
+pacman -S zsh
+
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
+chsh -s $(which zsh)
+curl https://raw.githubusercontent.com/peterlnguyen/dotfiles/master/.zshrc >> ~/.zshrc
 
 # i3
 pacman -S i3-wm --noconfirm --quiet
