@@ -19,6 +19,9 @@ alias aliases="vim ~/.bash_aliases"
 alias "realiases"="source ~/.bash_aliases"
 alias "rebash"="source ~/.bashrc"
 
+alias zshrc="sudo vim ~/.zshrc"
+alias rezsh="source ~/.zshrc"
+
 alias gitignore="vim ~/.gitignore"
 alias branches="git branch -a"
 alias status="git status"
