@@ -12,3 +12,6 @@ PATH="${PATH}:~/.gem/ruby/2.0.0/bin"
 nvm use v0.10.22 >/dev/null
 
 PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
