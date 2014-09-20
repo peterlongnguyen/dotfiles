@@ -5,6 +5,7 @@ set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set mouse=a
 syntax on
 set laststatus=2
 set nowrap
