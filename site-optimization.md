@@ -1,6 +1,6 @@
 Checklist to speed up site client-side.
 
-- Node.js: enable gzip compression
+- Node.js: enable gzip compression:
 ```
 app.use(express.compress()); // needs to go before that line below
 app.use(express.static(path.join(__dirname, 'public')));
