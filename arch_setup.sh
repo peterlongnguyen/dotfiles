@@ -79,6 +79,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 touch ~/.vimrc
 curl https://raw.githubusercontent.com/peterlnguyen/dotfiles/master/.vimrc >> ~/.vimrc
+git clone git@github.com:elzr/vim-json.git ~/.vim/bundle/
 
 # bash_profile setup
 touch ~/.bash_profile
