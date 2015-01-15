@@ -34,6 +34,7 @@ alias stash="git stash"
 alias gpom="git push origin master"
 alias gpo="git push origin"
 alias gcm="git commit -m"
+alias gfa="git fetch --all"
 alias gcmgpo="!gcm && !gpo"
 
 alias ls="ls -a -G"
