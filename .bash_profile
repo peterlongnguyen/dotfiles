@@ -1,4 +1,5 @@
 source ~/.bash_aliases
+source /etc/profile.d/autojump.bash
 
 export EDITOR="vim"
 set -o vi
