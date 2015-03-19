@@ -18,6 +18,14 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
 
+# Pulse Audio controls
+#bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
+#bindsym XF86AudioMute exec amixer -q set Master toggle 
+
+
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 
