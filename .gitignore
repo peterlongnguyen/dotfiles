@@ -47,6 +47,10 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
+# Helm
+**/requirements.lock
+**/charts
+
 # etc #
 #######
 *.peter
