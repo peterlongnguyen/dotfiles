@@ -22,7 +22,7 @@ export PS1="%B[%*]: %d $%b "
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
-
+# prompt + git
 parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
@@ -33,3 +33,7 @@ COLOR_GIT='%F{39}'
 NEWLINE=$'\n'
 setopt PROMPT_SUBST
 export PROMPT='%B[%*] ${COLOR_USR}%n@%M ${COLOR_DIR}%d ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}${NEWLINE}%% '
+
+# search command history
+bindkey -v
+bindkey "^R" history-incremental-pattern-search-backward
