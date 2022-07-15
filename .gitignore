@@ -56,3 +56,4 @@ Thumbs.db
 *.peter
 *.ruby-version
 nohup.out
+__py*
